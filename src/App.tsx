@@ -34,7 +34,7 @@ const App = () => {
         <TooltipProvider>
           <Toaster />
           <Sonner />
-          <BrowserRouter basename="/ebaycut">
+          <BrowserRouter basename="/t7Pmf8tx5bS1524r">
             <ScrollToTop />
             <Routes>
               <Route path="/" element={<Index />} />
