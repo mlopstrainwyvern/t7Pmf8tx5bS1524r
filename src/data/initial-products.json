@@ -1,0 +1,61 @@
+[
+  {
+    "id": "1",
+    "slug": "sony-wh-1000xm5-headphones",
+    "title": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
+    "description": "Industry-leading noise cancellation and exceptional sound quality with this premium wireless headphones.",
+    "imageUrl": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2865&q=80",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2865&q=80",
+        "alt": "Sony WH-1000XM5 Black",
+        "isMain": true
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
+        "alt": "Sony WH-1000XM5 Side View"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1484704849700-f032a568e944?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
+        "alt": "Sony WH-1000XM5 Detail"
+      }
+    ],
+    "category": "Electronics",
+    "tags": ["headphones", "audio", "sony", "wireless"],
+    "featured": true,
+    "variants": [
+      {
+        "type": "color",
+        "name": "Color",
+        "values": ["#000000", "#FFFFFF", "#7E7E7E"]
+      }
+    ],
+    "retailers": [
+      {
+        "name": "Amazon",
+        "url": "https://amazon.com/sony-wh1000xm5",
+        "originalPrice": 399.99,
+        "discountPrice": 348.0,
+        "discount": 13,
+        "discountCode": "SONY15",
+        "logo": "https://logo.clearbit.com/amazon.com"
+      },
+      {
+        "name": "Best Buy",
+        "url": "https://bestbuy.com/sony-headphones",
+        "originalPrice": 399.99,
+        "discountPrice": 349.99,
+        "discount": 12,
+        "logo": "https://logo.clearbit.com/bestbuy.com"
+      },
+      {
+        "name": "Sony",
+        "url": "https://sony.com/headphones",
+        "originalPrice": 399.99,
+        "discountPrice": 399.99,
+        "discount": 0,
+        "logo": "https://logo.clearbit.com/sony.com"
+      }
+    ]
+  }
+]

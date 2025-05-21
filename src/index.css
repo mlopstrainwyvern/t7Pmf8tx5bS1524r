@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 180 95% 98%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 180 83% 36%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 355 100% 70%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 180 83% 36%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .badge-discount {
+    @apply bg-[#F97316] text-white text-sm font-bold px-3 py-1 rounded-full shadow-sm absolute top-3 right-3 flex items-center gap-1;
+  }
+
+  .card-deal {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1 relative;
+  }
+
+  .btn-deal {
+    @apply bg-ebaycut-teal hover:bg-opacity-90 text-white font-semibold py-2 px-4 rounded-md transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-ebaycut-coral hover:bg-opacity-90 text-white font-semibold py-2 px-4 rounded-md transition-colors;
+  }
+
+  .deal-tag {
+    @apply bg-ebaycut-yellow text-ebaycut-darkGray text-xs font-bold px-3 py-1 rounded-full;
+  }
+
+  /* Animation styles */
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+    visibility: visible;
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    will-change: opacity, transform;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  .animate-on-scroll.animate-fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+@keyframes pulseLight {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-pulse-light {
+  animation: pulseLight 2s ease-in-out infinite;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EbayCut.com - Find the Best Deals Around the Web</title>
+    <meta
+      name="description"
+      content="Discover the best discounts and deals on products from multiple retailers. Save money with EbayCut.com!"
+    />
+    <meta name="author" content="EbayCut.com" />
+
+    <meta
+      property="og:title"
+      content="EbayCut.com - Best Product Deals & Discounts"
+    />
+    <meta
+      property="og:description"
+      content="Discover the best discounts and deals on products from multiple retailers. Save money with EbayCut.com!"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://placehold.co/1200x630/e2e8f0/1e293b?text=EbayCut.com"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ebaycut" />
+    <meta
+      name="twitter:image"
+      content="https://placehold.co/1200x630/e2e8f0/1e293b?text=EbayCut.com"
+    />
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "EbayCut.com",
+        "url": "https://ebaycut.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://ebaycut.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- Main application script -->
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>
