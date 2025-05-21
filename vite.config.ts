@@ -6,7 +6,7 @@ import fs from "fs";
 // Set base path for GitHub Pages deployment
 // For GitHub Pages, this should be '/<REPO>/' if deploying to https://<USERNAME>.github.io/<REPO>/
 // or '/' if deploying to a custom domain or https://<USERNAME>.github.io/
-const base = "/ebaycut/";
+const base = "/t7Pmf8tx5bS1524r/";
 
 // https://vitejs.dev/config/
 export default defineConfig(() => ({
