@@ -42,7 +42,6 @@ export const products: Product[] = [
         discountPrice: 348.0,
         discount: 13,
         discountCode: "SONY15",
-        logo: "https://logo.clearbit.com/amazon.com",
       },
       {
         name: "Best Buy",
