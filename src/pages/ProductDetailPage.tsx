@@ -315,7 +315,12 @@ const ProductDetailPage = () => {
                     <div className="w-10 h-10 mr-3 flex-shrink-0">
                       {retailer.logo && (
                         <img
-                          src={retailer.logo}
+                          src={
+                            retailer.logo ||
+                            `https://www.google.com/s2/favicons?sz=64&domain_url=${encodeURIComponent(
+                              retailer.url
+                            )}`
+                          }
                           alt={retailer.name}
                           className="w-full h-full object-contain"
                         />
