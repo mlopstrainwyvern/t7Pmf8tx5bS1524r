@@ -17,14 +17,6 @@ import {
   TableRow,
   TableCell,
 } from "@/components/ui/table";
-// import {
-//   Dialog,
-//   DialogContent,
-//   DialogHeader,
-//   DialogTitle,
-//   DialogFooter,
-//   DialogTrigger,
-// } from "@/components/ui/dialog";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -34,7 +26,6 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-  // AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import {
   getProducts,
@@ -87,8 +78,8 @@ const AdminPage = () => {
       discountPrice: 0,
       discount: 0,
       url: "",
-      logo: "",
       discountCode: "",
+      // Remove logo from initial state since it's optional
     },
   ]);
 
@@ -380,7 +371,6 @@ const AdminPage = () => {
         discountPrice: 0,
         discount: 0,
         url: "",
-        logo: "",
         discountCode: "",
       },
     ]);
@@ -542,8 +532,8 @@ const AdminPage = () => {
           discountPrice: 0,
           discount: 0,
           url: "",
-          logo: "",
           discountCode: "",
+          // Logo is optional, so we don't need to initialize it
         },
       ]);
       setVariants([{ name: "", type: "color", values: [""] }]);
@@ -586,9 +576,6 @@ const AdminPage = () => {
                 className="w-full"
                 required
               />
-              <p className="text-xs text-gray-500 mt-1">
-                For demo purposes, use: admin123
-              </p>
             </div>
             <Button type="submit" className="w-full bg-ebaycut-teal">
               Login
@@ -699,8 +686,8 @@ const AdminPage = () => {
                         discountPrice: 0,
                         discount: 0,
                         url: "",
-                        logo: "",
                         discountCode: "",
+                        // Logo is optional, so we don't need to initialize it
                       },
                     ]);
                     setVariants([{ name: "", type: "color", values: [""] }]);
@@ -1216,10 +1203,10 @@ const AdminPage = () => {
                           </div>
                           <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">
-                              Logo URL
+                              Logo URL (optional)
                             </label>
                             <Input
-                              value={retailer.logo}
+                              value={retailer.logo || ""}
                               onChange={(e) =>
                                 handleRetailerChange(
                                   index,
@@ -1227,6 +1214,7 @@ const AdminPage = () => {
                                   e.target.value
                                 )
                               }
+                              placeholder="https://example.com/logo.png"
                             />
                           </div>
                         </div>
@@ -1491,8 +1479,8 @@ const AdminPage = () => {
                               discountPrice: 0,
                               discount: 0,
                               url: "",
-                              logo: "",
                               discountCode: "",
+                              // Logo is optional, so we don't need to initialize it
                             },
                           ]);
                           setVariants([
