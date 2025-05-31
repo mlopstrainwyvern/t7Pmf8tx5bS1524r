@@ -34,13 +34,17 @@ const RetailerCard = ({ retailer, bestDeal = false }: RetailerCardProps) => {
     >
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center">
-          {retailer.logo && (
-            <img
-              src={retailer.logo}
-              alt={retailer.name}
-              className="w-8 h-8 mr-2 rounded object-contain"
-            />
-          )}
+          <img
+            src={
+              retailer.logo ||
+              `https://www.google.com/s2/favicons?sz=128&domain_url=${encodeURIComponent(
+                retailer.url
+              )}`
+            }
+            alt={retailer.name}
+            className="w-8 h-8 mr-2 rounded object-contain"
+          />
+
           <span className="font-medium">{retailer.name}</span>
         </div>
         {bestDeal && (

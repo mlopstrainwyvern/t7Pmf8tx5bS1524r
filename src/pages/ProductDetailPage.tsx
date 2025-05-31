@@ -313,18 +313,16 @@ const ProductDetailPage = () => {
                 {product.retailers.map((retailer) => (
                   <div key={retailer.name} className="flex items-start">
                     <div className="w-10 h-10 mr-3 flex-shrink-0">
-                      {retailer.logo && (
-                        <img
-                          src={
-                            retailer.logo ||
-                            `https://www.google.com/s2/favicons?sz=64&domain_url=${encodeURIComponent(
-                              retailer.url
-                            )}`
-                          }
-                          alt={retailer.name}
-                          className="w-full h-full object-contain"
-                        />
-                      )}
+                      <img
+                        src={
+                          retailer.logo ||
+                          `https://www.google.com/s2/favicons?sz=128&domain_url=${encodeURIComponent(
+                            retailer.url
+                          )}`
+                        }
+                        alt={retailer.name}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                     <div>
                       <h4 className="font-medium">{retailer.name}</h4>

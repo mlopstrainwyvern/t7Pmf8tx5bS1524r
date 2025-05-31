@@ -1,5 +1,4 @@
 import { Product } from "../types";
-import { products as defaultProducts } from "../data/products";
 import initialProductsJson from "../data/initial-products.json";
 
 // Cast the imported JSON to the Product type
@@ -16,13 +15,11 @@ export const getProducts = (): Product[] => {
     if (storedProducts) {
       return JSON.parse(storedProducts);
     }
-    // Initialize with initial products from JSON file if nothing in storage
-    // This allows us to update the products by updating the JSON file
     localStorage.setItem(STORAGE_KEY, JSON.stringify(initialProducts));
     return initialProducts;
   } catch (error) {
     console.error("Error getting products from storage:", error);
-    return initialProducts.length > 0 ? initialProducts : defaultProducts;
+    return initialProducts;
   }
 };
 
